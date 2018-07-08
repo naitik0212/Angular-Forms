@@ -13,8 +13,17 @@ export class AppComponent {
   genders = ['male', 'female'];
   defaultGender = 'male';
 
-  suggestUserName() {
-    const suggestedName = 'Superuser';
+  autofill() {
+    const suggestedName = 'test';
+    this.signUpForm.setValue({
+      userData: {
+        username: suggestedName,
+        email: suggestedName + '@gmail.com'
+      },
+      secret: 'pet',
+      AnswerSecretQuestion: 'dog',
+      gender : 'male'
+    });
   }
 
   // onSubmit(form: NgForm) {
