@@ -12,17 +12,25 @@ export class AppComponent {
   answer = '';
   genders = ['male', 'female'];
   defaultGender = 'male';
+  suggestedName = 'test';
+
 
   autofill() {
-    const suggestedName = 'test';
     this.signUpForm.setValue({
       userData: {
-        username: suggestedName,
-        email: suggestedName + '@gmail.com'
+        username: this.suggestedName,
+        email: this.suggestedName + '@gmail.com'
       },
       secret: 'pet',
       AnswerSecretQuestion: 'dog',
       gender : 'male'
+    });
+  }
+    suggestedUserName() {
+    this.signUpForm.form.patchValue({
+      userData: {
+        username: this.suggestedName
+      }
     });
   }
 
