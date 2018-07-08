@@ -1,5 +1,7 @@
 # Angular-Forms (Template Driven)
 
+A basic demo of Angular Forms using Angular Directives and validators.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.0.
 
 ## Development server
