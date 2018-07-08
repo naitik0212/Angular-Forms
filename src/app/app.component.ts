@@ -55,6 +55,7 @@ export class AppComponent {
     this.user.secretQuestion = this.signUpForm.value.secret;
     this.user.answer = this.signUpForm.value.AnswerSecretQuestion;
 
+    this.signUpForm.reset();
 
 
   }
